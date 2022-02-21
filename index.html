@@ -3,47 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="index.css" rel="stylesheet">
 </head>
-
-<link rel="stylesheet" href="index.css">
-
 <body>
+<div>
+    <h1>
+        1. Table with style you want to add
+    </h1>
+</div>
+
 
 <div>
-    hello
-    <span>
-        inline spanned
-    </span>
-        <input type="text">
-    hello
+    <table>
+        <tr>
+            <th> Student Name </th>
+            <th> Age </th>
+            <th> Phone # </th>
+            <th> Address </th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>19</td>
+            <td>455-983-0903</td>
+            <td>123 Ave, San Francisco, CA, 94011</td>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>21</td>
+            <td>455-983-0912</td>
+            <td>456 Rd, San Francisco, CA, 94012</td>
+        </tr>
+        <tr>
+            <td>Josh</td>
+            <td>22</td>
+            <td>455-345-0912</td>
+            <td>789 Dr, Newark, CA, 94016</td>
+        </tr>
+        <tr>
+            <td>Matt</td>
+            <td>23</td>
+            <td>321-345-0912</td>
+            <td>223 Dr, Sunnyvale, CA, 94016</td>
+        </tr>
+    </table>
+
+</div>
+
+<!--part 2 google search bar-->
+<div>
+    <h1>2. google search bar</h1>
+    <form id="form" role="search">
+        <input type="search" id="query" name="q"
+               placeholder="Google Search..."
+               aria-label="Search through site content">
+        <button>Search</button>
+    </form>
+</div>
+
+<!--part 3 ordered list-->
+
+<div>
+    <h1>
+        3. ordered and unordered list
+    </h1>
+    <ol>
+        <li value="1">HTML</li>
+        <li>JavaScript</li>
+        <li>CSS</li>
+        <li>React</li>
+        <li>Redux</li>
+        <li>Java</li>
+    </ol>
+
+    <ul>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>CSS</li>
+        <li>React</li>
+        <li>Redux</li>
+        <li>Java</li>
+
+    </ul>
+
 </div>
 
 <div>
-    <ol start="50">
-        <li>coffee</li>
-        <li>coffee</li>
-        <li>milk</li>
-    </ol>
-
-    <input type="button" value="click me">
+    <h1>
+        4. A dropdown list with the following options
+    </h1>
     <label for="cars">Choose a car:</label>
+
     <select name="cars" id="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="opel">Opel</option>
-        <option value="audi">Audi</option>
+        <option value="Newark">Newark</option>
+        <option value="Santa Clara">Santa Clara</option>
+        <option value="UnionCity">Union City</option>
+        <option value="Daly City">Daly City</option>
+        <option value="San Jose">San Jose</option>
     </select>
 </div>
 </body>
-
-<style>
-    body {
-        background-color: aquamarine;
-    }
-    h1 {
-        color: antiquewhite;
-    }
-
-</style>
-
 </html>
