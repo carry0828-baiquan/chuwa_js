@@ -50,7 +50,7 @@ const string =
     ' Perhaps The Easiest-to-understand Case For Reduce Is To Return The Sum Of All The Elements In An Array ';
 
 const trimString = (string) => {
-  console.log("The result for Q4 is " + string.replace(/[^0-9a-zA-Z]/g, '').toLowerCase())
+  console.log("The result for Q4 is " + string.replace(/[^a-z0-9 -]/gi, '').toLowerCase().trim())
 }
 trimString(string);
 
