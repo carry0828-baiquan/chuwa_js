@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="hw3.js"></script>
+<link href="hw3.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <div class="input-row">
+        <label for="name">Student Name</label>
+        <input type="text" name="name" id="name" />
+
+
+    </div>
+    <div class="input-row">
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age" />
+
+    </div>
+    <div class="input-row">
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" />
+    </div>
+    <div class="input-row">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" />
+
+    </div>
+
+    <button>submit</button>
+</form>
+
+<table>
+    <thead>
+    <tr>
+        <th>Student Name</th>
+        <th>Age</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+<script>
+    const form = document.querySelector('form')
+    const tbodyEl = document.querySelector('tbody')
+    function onAddWebsite(e) {
+        e.preventDefault();
+        const studentName = document.getElementById('name').value;
+        const age = document.getElementById('age').value;
+        const phone = document.getElementById('phone').value;
+        const address = document.getElementById('address').value;
+        tbodyEl.innerHTML +=
+            `<tr>
+                  <td>${studentName}</td>
+                  <td>${age}</td>
+                  <td>${phone}</td>
+                  <td>${address}</td>
+                  <td><button class="deleteBtn">Delete</button></td>
+            </tr>`
+    }
+
+    form.addEventListener('submit', onAddWebsite)
+</script>
+</body>
+</html>
